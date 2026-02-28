@@ -34,7 +34,7 @@ chmod +x /usr/local/bin/dockshell
 Or download directly:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/jruedel/dockshell/main/dockshell.sh \
+curl -fsSL https://raw.githubusercontent.com/jruedel/dockshell/refs/heads/main/dockshell.sh \
   -o /usr/local/bin/dockshell
 chmod +x /usr/local/bin/dockshell
 ```
