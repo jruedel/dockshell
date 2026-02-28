@@ -26,17 +26,24 @@ DockShell — 3 containers
 ## Install
 
 ```bash
-# Copy the script to a directory on your PATH
-cp dockshell.sh /usr/local/bin/dockshell
-chmod +x /usr/local/bin/dockshell
+mkdir -p ~/.local/bin
+cp dockshell.sh ~/.local/bin/dockshell
+chmod +x ~/.local/bin/dockshell
 ```
 
 Or download directly:
 
 ```bash
+mkdir -p ~/.local/bin
 curl -fsSL https://raw.githubusercontent.com/jruedel/dockshell/refs/heads/main/dockshell.sh \
-  -o /usr/local/bin/dockshell
-chmod +x /usr/local/bin/dockshell
+  -o ~/.local/bin/dockshell
+chmod +x ~/.local/bin/dockshell
+```
+
+Make sure `~/.local/bin` is in your `PATH`. Add this to your shell profile (`~/.zshrc` or `~/.bashrc`) if needed:
+
+```bash
+export PATH="$HOME/.local/bin:$PATH"
 ```
 
 ## Usage
